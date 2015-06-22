@@ -71,7 +71,7 @@
  */
 @property (nonatomic, assign) BOOL useTimingFunction;
 
-
+@property (nonatomic, assign) CGFloat centerValueForAlpha;
 
 - (id)initWithHaloLayerNum:(int)num andStartInterval:(NSTimeInterval)interval;
 

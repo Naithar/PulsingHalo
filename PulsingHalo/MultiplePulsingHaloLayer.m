@@ -22,6 +22,7 @@
         // default
         _fromValueForRadius = 0.0;
         _fromValueForAlpha = 0.45;
+        _centerValueForAlpha = 0.45;
         _keyTimeForHalfOpacity = 0.2;
         _animationDuration = 3;
         _pulseInterval = 0;
@@ -67,6 +68,7 @@
             layer.position = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2);
             layer.radius = self.radius;
             layer.fromValueForAlpha = self.fromValueForAlpha;
+            layer.centerValueForAlpha = self.centerValueForAlpha;
             layer.fromValueForRadius = self.fromValueForRadius;
             layer.keyTimeForHalfOpacity = self.keyTimeForHalfOpacity;
             layer.pulseInterval = self.pulseInterval;

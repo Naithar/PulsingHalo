@@ -30,6 +30,7 @@
         self.radius = 60;
         self.fromValueForRadius = 0.0;
         self.fromValueForAlpha = 0.45;
+        self.centerValueForAlpha = 0.45;
         self.keyTimeForHalfOpacity = 0.2;
         self.animationDuration = 3;
         self.pulseInterval = 0;
@@ -89,7 +90,7 @@
     
     CAKeyframeAnimation *opacityAnimation = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
     opacityAnimation.duration = self.animationDuration;
-    opacityAnimation.values = @[@(self.fromValueForAlpha), @0.45, @0];
+    opacityAnimation.values = @[@(self.fromValueForAlpha), @(self.centerValueForAlpha), @0];
     opacityAnimation.keyTimes = @[@0, @(self.keyTimeForHalfOpacity), @1];
     opacityAnimation.removedOnCompletion = NO;
     

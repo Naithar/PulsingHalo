@@ -60,6 +60,9 @@
  */
 @property (nonatomic, assign) BOOL useTimingFunction;
 
+
+@property (nonatomic, assign) CGFloat centerValueForAlpha;
+
 - (id)initWithRepeatCount:(float)repeatCount;
 
 @end
